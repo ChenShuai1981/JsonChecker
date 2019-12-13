@@ -1,0 +1,30 @@
+[
+	{
+		"namespace": "com.caselchen.example.avro",
+		"type": "record",
+		"name": "ClientDataVO",
+		"fields": [{
+				"name": "version",
+				"type": "int"
+			},
+			{
+				"name": "region",
+				"type": "string"
+			},
+			{
+				"name": "type",
+				"type": "string"
+			},
+			{
+                "name": "phone",
+                "type": ["null", "string"],
+                "default": null
+            },
+            {
+                "name": "name",
+                "type": ["null", "string"],
+                "default": null
+            }
+		]
+	}
+]
